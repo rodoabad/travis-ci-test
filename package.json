@@ -1,0 +1,25 @@
+{
+  "name": "travis-ci-test",
+  "version": "0.1.0",
+  "description": "Travis-CI Test",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodoabad/travis-ci-test.git"
+  },
+  "author": "Rodo Abad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodoabad/travis-ci-test/issues"
+  },
+  "homepage": "https://github.com/rodoabad/travis-ci-test",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jshint": "^1.9.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.1.0",
+    "jshint-stylish": "^1.0.0"
+  }
+}
