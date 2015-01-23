@@ -10,11 +10,14 @@ gulp.task('lint', function() {
         .pipe(jshint.reporter('fail'));
 });
 
-gulp.task('scripts', function() {
+gulp.task('scripts', ['lint'], function() {
     return gulp.src('src/hello.js')
         .pipe(rename('hello.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['lint', 'scripts']);
+gulp.task('default', [
+    'lint',
+    'scripts'
+]);
